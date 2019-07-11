@@ -5,12 +5,6 @@ function hideShowPunch(valuesToHide){
   for(var i=0; i<=y.length; i++){
     hidePunch(y[i]);
   }
-
-  if ( $ ("div.survey-body > #primary > div").hasClass("survey-error") ) {  
-      for(var i=0; i<=y.length; i++){
-        showPunch(y[i]);
-      }
-    }  
 }
 
 
