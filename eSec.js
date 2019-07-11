@@ -1,3 +1,20 @@
+
+function hideShowPunch(numberOfPunchestoHide,valuesToHide){
+  var x = numberOfPunchestoHide;
+  var y = new Array(valuesToHide);
+
+  for(var i=0; i<=y.length; i++){
+    hidePunch(y[i]);
+  }
+
+  if ( $ ("div.survey-body > #primary > div").hasClass("survey-error") ) {  
+      for(var i=0; i<=y.length; i++){
+        showPunch(y[i]);
+      }
+    }  
+}
+
+
 function hidePunch(numOfPunchToHide) {
   
   var x = numOfPunchToHide;
