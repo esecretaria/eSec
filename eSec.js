@@ -1,14 +1,14 @@
 function hideShowPunch(valuesToHide){
-  var x = valuesToHide;
-  var y = [valuesToHide];
+  var x = [valuesToHide];
+  
 
-  for(var i=0; i<=y.length; i++){
-    hidePunch(y[i]);
+  for(var i=0; i<=x.length; i++){
+    hidePunch(x[i]);
   }
 
   if ( $ ("div.survey-body > #primary > div").hasClass("survey-error") ) {  
-      for(var i=0; i<=y.length; i++){
-        showPunch(y[i]);
+      for(var i=0; i<=x.length; i++){
+        showPunch(x[i]);
       }
     }  
 }
