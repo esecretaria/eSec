@@ -1,6 +1,6 @@
 function hideShowPunch(valuesToHide){
   var x = valuesToHide;
-  var y = [x];
+  var y = [valuesToHide];
 
   for(var i=0; i<=y.length; i++){
     hidePunch(y[i]);
