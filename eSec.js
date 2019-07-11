@@ -13,7 +13,6 @@ function hideShowPunch(valuesToHide){
     }  
 }
 
-
 function hidePunch(numOfPunchToHide) {
   
   var x = numOfPunchToHide;
