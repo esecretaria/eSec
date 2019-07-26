@@ -1,18 +1,11 @@
 function hidePunch2(numOfPunchToHide) {
-  
   var x = numOfPunchToHide;
   var nthChild = x + 2;
-  //var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  var z = document.getElementById("myDIV").childNodes;
   
-  var span = document.getElementByClass('groupingCols');
-  var row = span.getElementsByTagName('div')[nthChild].childNodes[nthChild];
+  z[nthChild].style.visibility = "hidden";
   
-  //console.log(x);
-  //console.log(nthChild);
-  //z.hide();
-  //return z;    
-   row.hide();
-  return row;
+  return z;
 }  
 
 function hideShowPunch(valuesToHide){
