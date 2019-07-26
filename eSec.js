@@ -1,7 +1,7 @@
 function hidePunch2(numOfPunchToHide) {
   var x = numOfPunchToHide;
   var nthChild = x + 2;
-  var z = document.getElementByClassName("answers answers-list").childNodes;
+  var z = document.getElementByClassName("answers-list").childNodes;
   
   z[nthChild].style.visibility = "hidden";
   
