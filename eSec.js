@@ -1,7 +1,7 @@
 function hidePunch2(numOfPunchToHide) {
   var x = numOfPunchToHide;
   var nthChild = x + 2;
-  var z = document.getElementById("myDIV").childNodes;
+  var z = document.getElementByClass("answers answers-list").childNodes;
   
   z[nthChild].style.visibility = "hidden";
   
