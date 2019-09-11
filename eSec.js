@@ -14,6 +14,22 @@ function mPunch(numOfPunchToHide) {
   return z;    
 }  
 
+function sPunch(numOfPunchToHide) {
+  
+  var x = numOfPunchToHide;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  
+  if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    z.hide();
+  }
+
+  console.log(x);
+  console.log(nthChild);
+ 
+  return z;    
+}
+
 function hideGridPunch(scaleValueToHide){
   var x = scaleValueToHide; 
 
