@@ -9,20 +9,6 @@ function hidePunch(numOfPunchToHide) {
   z.hide();
   return z;    
 }  
-    
-function showPunch(numOfPunchToShow) {
-  
-  var x = numOfPunchToShow;
-  var nthChild = x + 2;
-  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
-  
-  console.log(x);
-  console.log(nthChild);
-  z.show();
-  return z;    
-} 
-
-
 
 function hideGridPunch(scaleValueToHide){
   var x = scaleValueToHide; 
@@ -35,6 +21,19 @@ function hideGridPunch(scaleValueToHide){
 }
 
 
+/*------     no longer needed ----- */
+/*function showPunch(numOfPunchToShow) {
+  
+  var x = numOfPunchToShow;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  
+  console.log(x);
+  console.log(nthChild);
+  z.show();
+  return z;    
+} 
+
 function showGridPunch(scaleValueToHide){
   var x = scaleValueToHide; 
 
@@ -44,3 +43,4 @@ function showGridPunch(scaleValueToHide){
   y.show();
   z.show();
 }
+*/
