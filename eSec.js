@@ -6,7 +6,11 @@ function hidePunch(numOfPunchToHide) {
   
   console.log(x);
   console.log(nthChild);
-  z.hide();
+  
+  if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+    z.hide();
+  }
+  
   return z;    
 }  
 
