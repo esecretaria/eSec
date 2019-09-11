@@ -1,16 +1,26 @@
-function hidePunch(numOfPunchToHide) {
+function hidePunch(qType,numOfPunchToHide) {
   
   var x = numOfPunchToHide;
   var nthChild = x + 2;
   var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  var questionType = '';
+ 
+  questionType = qType;
   
-  console.log(x);
-  console.log(nthChild);
-  
-  if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
-    z.hide();
+  if(questionType.toUpperCase()=='M'){ // for multi
+      if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+        z.hide();
+      }
   }
   
+ if(questionType.toUpperCase()=='S'){ // for single
+      if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+        z.hide();
+      }
+  }
+  console.log(x);
+  console.log(nthChild);
+ 
   return z;    
 }  
 
