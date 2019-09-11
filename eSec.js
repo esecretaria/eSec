@@ -1,6 +1,6 @@
-function mPunch(numOfPunchToHide) {
+function mPunch(numOfPunchToHideMulti) {
   
-  var x = numOfPunchToHide;
+  var x = numOfPunchToHideMulti;
   var nthChild = x + 2;
   var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
   
@@ -14,9 +14,9 @@ function mPunch(numOfPunchToHide) {
   return z;    
 }  
 
-function sPunch(numOfPunchToHide) {
+function sPunch(numOfPunchToHideSingle) {
   
-  var x = numOfPunchToHide;
+  var x = numOfPunchToHideSingle;
   var nthChild = x + 2;
   var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
   
