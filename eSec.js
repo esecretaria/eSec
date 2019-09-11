@@ -3,9 +3,7 @@ function hidePunch(qType,numOfPunchToHide) {
   var x = numOfPunchToHide;
   var nthChild = x + 2;
   var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
-  var questionType = '';
- 
-  questionType = qType;
+  var questionType = qType;
   
   if(questionType.toUpperCase()=='M'){ // for multi
       if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
