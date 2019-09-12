@@ -16,13 +16,58 @@ function hidePunch([qtype],numOfPunchToHideMulti) {
       z.hide();
     }
   }
-
-  console.log(x);
-  console.log(nthChild);
- 
+  //console.log(x);
+  //console.log(nthChild);
   return z;    
 }  
 
+function hideScale(scaleValueToHide){
+  var x = scaleValueToHide; 
+
+  var y = $ ("td[headers=QGRID_c"+x+"]");
+  var z = $ ("#QGRID_c"+x);
+  
+  if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    y.hide();
+    z.hide();
+  }
+}
+
+
+
+
+
+/*------     no longer needed ----- */
+/*-----  efforts that why it's not deleted ---*/
+
+/*  --- First try
+
+function showPunch(numOfPunchToShow) {
+  
+  var x = numOfPunchToShow;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  
+  console.log(x);
+  console.log(nthChild);
+  z.show();
+  return z;    
+} 
+
+function showGridPunch(scaleValueToHide){
+  var x = scaleValueToHide; 
+
+  var y = $ ("td[headers=QGRID_c"+x+"]");
+  var z = $ ("#QGRID_c"+x);
+
+  y.show();
+  z.show();
+}
+*/
+
+
+
+/*  Revision 2
 
 
 function mPunch(numOfPunchToHideMulti) {
@@ -67,30 +112,5 @@ function gPunch(scaleValueToHide){
     y.hide();
     z.hide();
   }
-  
-}
-
-
-/*------     no longer needed ----- */
-/*function showPunch(numOfPunchToShow) {
-  
-  var x = numOfPunchToShow;
-  var nthChild = x + 2;
-  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
-  
-  console.log(x);
-  console.log(nthChild);
-  z.show();
-  return z;    
-} 
-
-function showGridPunch(scaleValueToHide){
-  var x = scaleValueToHide; 
-
-  var y = $ ("td[headers=QGRID_c"+x+"]");
-  var z = $ ("#QGRID_c"+x);
-
-  y.show();
-  z.show();
 }
 */
