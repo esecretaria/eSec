@@ -30,14 +30,17 @@ function sPunch(numOfPunchToHideSingle) {
   return z;    
 }
 
-function hideGridPunch(scaleValueToHide){
+function gPunch(scaleValueToHide){
   var x = scaleValueToHide; 
 
   var y = $ ("td[headers=QGRID_c"+x+"]");
   var z = $ ("#QGRID_c"+x);
-
-  y.hide();
-  z.hide();
+  
+  if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    y.hide();
+    z.hide();
+  }
+  
 }
 
 
