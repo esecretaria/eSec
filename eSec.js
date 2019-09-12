@@ -1,3 +1,30 @@
+function hidePunch([qtype],numOfPunchToHideMulti) {
+  
+  var x = numOfPunchToHideMulti;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  var questionType = qtype;
+  
+  if(questionType.toUpperCase()=='M'){
+    if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+      z.hide();
+    }
+  }
+  
+  if(questionType.toUpperCase()=='S'){
+    if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+      z.hide();
+    }
+  }
+
+  console.log(x);
+  console.log(nthChild);
+ 
+  return z;    
+}  
+
+
+
 function mPunch(numOfPunchToHideMulti) {
   
   var x = numOfPunchToHideMulti;
