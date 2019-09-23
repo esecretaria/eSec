@@ -26,7 +26,7 @@ function hidePunch([qtype],numOfPunchToHide) {
   //console.log(nthChild);
   //return z;   
 
-  if(questionType.toUpperCase()=='G'){ 
+  if(questionType.toUpperCase()=='SCALE'){ 
     if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
       a.hide();
       b.hide();
