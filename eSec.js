@@ -1,4 +1,4 @@
-function hidePunch([qtype],numOfPunchToHide) {
+function hidePunch([qtype(10)],numOfPunchToHide) {
   
   var questionType = qtype;
   var x = numOfPunchToHide;
@@ -10,13 +10,13 @@ function hidePunch([qtype],numOfPunchToHide) {
   var b = $ ("#QGRID_c"+x);
   
   
-  if(questionType.toUpperCase()=='M'){
+  if(questionType.toUpperCase()=='MTYPE'){
     if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
   }
   
-  if(questionType.toUpperCase()=='S'){
+  if(questionType.toUpperCase()=='STYPE'){
     if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
