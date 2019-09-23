@@ -1,4 +1,4 @@
-function hidePunch([qtype(10)],numOfPunchToHide) {
+function hidePunch([qtype],numOfPunchToHide) {
   
   var questionType = qtype;
   var x = numOfPunchToHide;
@@ -10,13 +10,13 @@ function hidePunch([qtype(10)],numOfPunchToHide) {
   var b = $ ("#QGRID_c"+x);
   
   
-  if(questionType.toUpperCase()=='MTYPE'){
+  if(questionType.toUpperCase()=='M'){
     if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
   }
   
-  if(questionType.toUpperCase()=='STYPE'){
+  if(questionType.toUpperCase()=='S'){
     if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
@@ -26,13 +26,18 @@ function hidePunch([qtype(10)],numOfPunchToHide) {
   //console.log(nthChild);
   //return z;   
 
-  if(questionType.toUpperCase()=='SCALE'){ 
+  if(questionType.toUpperCase()=='G'){ 
     if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
       a.hide();
       b.hide();
     }
   }
 }  
+
+
+
+
+
 
 /*
 function hideScale(scaleValueToHide){
