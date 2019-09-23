@@ -1,6 +1,6 @@
-function hidePunch([qtype],numOfPunchToHideMulti) {
+function hidePunch([qtype],numOfPunchToHide) {
   
-  var x = numOfPunchToHideMulti;
+  var x = numOfPunchToHide;
   var nthChild = x + 2;
   var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
   var questionType = qtype;
@@ -9,18 +9,31 @@ function hidePunch([qtype],numOfPunchToHideMulti) {
     if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
+    return z;
   }
   
   if(questionType.toUpperCase()=='S'){
     if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
       z.hide();
     }
+    return z;
   }
   //console.log(x);
   //console.log(nthChild);
-  return z;    
+  //return z;   
+
+  if(questionType.toUpperCase()=='SCALE'){ 
+    var a = $ ("td[headers=QGRID_c"+x+"]");
+    var b = $ ("#QGRID_c"+x);
+    
+    if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    a.hide();
+    b.hide();
+  }
+  }
 }  
 
+/*
 function hideScale(scaleValueToHide){
   var x = scaleValueToHide; 
 
@@ -32,6 +45,7 @@ function hideScale(scaleValueToHide){
     z.hide();
   }
 }
+*/
 
 
 
@@ -65,6 +79,55 @@ function showGridPunch(scaleValueToHide){
 }
 */
 
+
+
+/*  Revision 2
+
+
+function mPunch(numOfPunchToHideMulti) {
+  
+  var x = numOfPunchToHideMulti;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  
+  if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+    z.hide();
+  }
+
+  console.log(x);
+  console.log(nthChild);
+ 
+  return z;    
+}  
+
+function sPunch(numOfPunchToHideSingle) {
+  
+  var x = numOfPunchToHideSingle;
+  var nthChild = x + 2;
+  var z = $ (".answers > .groupingCols:nth-child("+nthChild+")");
+  
+  if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    z.hide();
+  }
+
+  console.log(x);
+  console.log(nthChild);
+ 
+  return z;    
+}
+
+function gPunch(scaleValueToHide){
+  var x = scaleValueToHide; 
+
+  var y = $ ("td[headers=QGRID_c"+x+"]");
+  var z = $ ("#QGRID_c"+x);
+  
+  if($ ("input:radio:checked").size()==0 && $ (".survey-error").size()==0 ){
+    y.hide();
+    z.hide();
+  }
+}
+*/
 
 
 /*  Revision 2
