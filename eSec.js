@@ -39,3 +39,20 @@ function hideGrid(questionName,numOfPunchToHide) {
     }
 }  
 
+
+/*
+<style name="respview.client.js" with="Q47x50"><![CDATA[
+<script src='https://esecretaria.github.io/eSec/eSec.js'></script>
+<script>
+$ (document).ready(function(){
+  
+  if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+       $ ("td[headers=Q47x50_c4]").hide();
+       $ ("#Q47x50_c4").hide();
+    }
+
+});       
+</script>
+]]></style>
+
+*/
