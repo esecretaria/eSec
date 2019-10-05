@@ -24,3 +24,18 @@ function hidePunch([qtype],numOfPunchToHide) {
   }
 }  
 
+function hideGrid(questionName,numOfPunchToHide) {
+  
+  var qname = questionName;
+  var x = numOfPunchToHide;
+  
+  var a = $ ("td[headers="+qname+"_c"+x+"]");
+  var b = $ ("#"+qname+"+_c"+x);
+  
+  
+  if($ ("input:checkbox:checked").size()==0 && $ (".survey-error").size()==0 ){
+        a.hide();
+        b.hide();
+    }
+}  
+
