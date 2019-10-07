@@ -28,16 +28,7 @@ function hidePunch([qtype],numOfPunchToHide) {
 }  
 
 
-function hidScale([questionName],valueToHide){
-	var qname = questionName;
-	var x = valueToHide;
-	
-	var ScaleHeader = $ ("td[headers="+qname+"_c"+x+"]");
-	var punchesUnderTheScaleHeader = $ ("#"+qname+"_c"+x);
-	
-	ScaleHeader.hide();
-	punchesUnderTheScaleHeader.hide();
-}
+
 
 
 /*
