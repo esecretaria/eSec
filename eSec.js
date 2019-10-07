@@ -35,7 +35,6 @@ function hidScale([questionName],valueToHide){
 	var ScaleHeader = $ ("td[headers="+qname+"_c"+x+"]");
 	var punchesUnderTheScaleHeader = $ ("#"+qname+"_c"+x);
 	
-
 	ScaleHeader.hide();
 	punchesUnderTheScaleHeader.hide();
 }
