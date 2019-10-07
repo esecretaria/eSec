@@ -21,8 +21,8 @@ function hidePunch([qtype],numOfPunchToHide) {
 	var idLen = getId.length;
 	var useId = getId.substring(0, idLen-3);
 
-	var a = $ ("'td[headers='+useId+'_c'+x+']'");
-	var b = $ ("#+useId+"_c"+x");
+	var a = $ ("td[headers="+useId+"_c"+x+"]");
+	var b = $ ("#"+useId+"_c"+x);
        
 	a.hide();
         b.hide();
