@@ -17,9 +17,12 @@ function hidePunch([qtype],numOfPunchToHide) {
       z.hide();
      }
      if(questionType.toUpperCase()=='G'){
-        var getId = $ ('.col-legend').eq(x).attr('id');
-	var a = $ ("td[headers="+getId+"]");
-	var b = $ ("#"+getId);
+        var getId = $ ('.col-legend').attr('id');
+	var idLen = getId.length;
+	var useId = getId.substring(0, idLen-3);
+
+	var a = $ ("td[headers="+useId+"_c"+x+"]");
+	var b = $ ("#"+useId"+_c"+x);
        
 	a.hide();
         b.hide();
@@ -28,7 +31,7 @@ function hidePunch([qtype],numOfPunchToHide) {
 }  
 
 
-function hidScale([questionName],valueToHide){
+/*function hidScale([questionName],valueToHide){
 	var qname = questionName;
 	var x = valueToHide;
 	
@@ -37,7 +40,7 @@ function hidScale([questionName],valueToHide){
 	
 	ScaleHeader.hide();
 	punchesUnderTheScaleHeader.hide();
-}
+}*/
 
 
 /*
