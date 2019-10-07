@@ -17,11 +17,11 @@ function hidePunch([qtype],numOfPunchToHide) {
       z.hide();
      }
      if(questionType.toUpperCase()=='G'){
-        var getId = $('.col-legend').eq(x).attr('id');
-	      var a = $ ("td[headers="+getId+"]");
-	      var b = $ ("#"+getId);
+        var getId = $ ('.col-legend').eq(x).attr('id');
+	var a = $ ("td[headers="+getId+"]");
+	var b = $ ("#"+getId);
        
-	      a.hide();
+	a.hide();
         b.hide();
      }
   }
