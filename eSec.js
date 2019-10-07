@@ -29,8 +29,6 @@ function hidePunch([qtype],numOfPunchToHide) {
 
 
 
-
-
 /*
 <style name="respview.client.js" with="Q47x50"><![CDATA[
 <script src='https://esecretaria.github.io/eSec/eSec.js'></script>
