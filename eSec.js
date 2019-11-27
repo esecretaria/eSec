@@ -30,8 +30,9 @@ function hidePunch([qtype],numOfPunchToHide) {
 	//var getLabel = $ ("span.label").text();
 	//var lastStr = getLabel.length;
 	//var labelName = getLabel.substring(1, getLabel-1);
+	var excl = $ ("div.answers > div:eq("+x+")");     
+	excl.hide();     
 	$ ('span.qaCode').hide();
-	$ ("div.answers > div:eq("+x+")").hide();
 	$ ('sup.qaCode').hide();
     }
   }
