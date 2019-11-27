@@ -27,10 +27,13 @@ function hidePunch([qtype],numOfPunchToHide) {
         b.hide();
      }
      if(questionType.toUpperCase()=='N'){
-     	$ ('span.qaCode').hide();
-	$ ('div.element > span.cell-sub-wrapper').hide();
+	//var getLabel = $ ("span.label").text();
+	//var lastStr = getLabel.length;
+	//var labelName = getLabel.substring(1, getLabel-1);
+	$ ('span.qaCode').hide();
+	$ ("div.answers > div:eq("+x+")").hide();
 	$ ('sup.qaCode').hide();
-     }
+    }
   }
 }  
 
