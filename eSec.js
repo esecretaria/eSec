@@ -10,9 +10,11 @@ function hidePunch([qtype],numOfPunchToHide) {
      if(questionType.toUpperCase()=='M'){
       z.hide();
      }
+	  
      if(questionType.toUpperCase()=='S'){
       z.hide();
      }
+	  
      if(questionType.toUpperCase()=='G'){
         var getId = $ ('.col-legend').attr('id');
 	var idLen = getId.length;
@@ -23,6 +25,11 @@ function hidePunch([qtype],numOfPunchToHide) {
        
 	a.hide();
         b.hide();
+     }
+     if(questionType.toUpperCase()=='N'){
+     	$ ('span.qaCode').hide();
+	$ ('div.element > span.cell-sub-wrapper').hide();
+	$ ('sup.qaCode').hide();
      }
   }
 }  
