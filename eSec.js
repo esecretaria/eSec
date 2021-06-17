@@ -38,7 +38,7 @@ function hidePunch([qtype],numOfPunchToHide) {
   }
 }  
 
-function InsertTextInAPunch(punchnum,textInsert) {
+function InsertTextAfterPunch(punchnum,textInsert) {
 
   var textAfterPunch = punchnum;
   var nthChildPunch = textAfterPunch + 2;
