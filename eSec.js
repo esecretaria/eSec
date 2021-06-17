@@ -38,11 +38,11 @@ function hidePunch([qtype],numOfPunchToHide) {
   }
 }  
 
-function InsertTextInAPunch(punchnum,[textInsert]) {
+function InsertTextInAPunch(punchnum,"textInsert") {
 
   var textAfterPunch = punchnum;
   var nthChildPunch = textAfterPunch + 2;
-  var textToInsert = [textInsert];
+  var textToInsert = textInsert;
   
   var textAfterPunch = $ (".answers > .groupingCols:nth-child("+nthChildPunch+")").after(textToInsert);
 
