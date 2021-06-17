@@ -44,7 +44,7 @@ function InsertTextInAPunch(punchnum,[textInsert]) {
   var nthChildPunch = textAfterPunch + 2;
   var textToInsert = [textInsert];
   
-  var textAfterPunch = $ (".answers > .groupingCols:nth-child("+nthChildPunch+")").after("+textToInsert+");
+  var textAfterPunch = $ (".answers > .groupingCols:nth-child("+nthChildPunch+")").after('"+textToInsert+"');
 
   return textAfterPunch;
 }
