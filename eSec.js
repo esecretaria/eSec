@@ -26,6 +26,20 @@ function hidePunch([qtype],numOfPunchToHide) {
 	a.hide();
         b.hide();
      }
+	  
+     if(questionType.toUpperCase()=='G2'){
+
+      var getId2 = $ ('.col-legend').attr('id');
+      var idLen2 = getId2.length;
+      var useId2 = getId2.substring(0, idLen2-1);
+
+      var c = $ ("td[headers='+useId2+x+']");
+      var d = $ ("#+useId2+x");
+       
+        c.hide();
+        d.hide();
+     }
+	  
      if(questionType.toUpperCase()=='N'){
 	//var getLabel = $ ("span.label").text();
 	//var lastStr = getLabel.length;
